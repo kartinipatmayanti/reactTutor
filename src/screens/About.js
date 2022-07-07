@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StatusBar, TouchableOpacity} from 'react-native';
+import {View, Text, StatusBar, TouchableOpacity, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 class About extends Component {
@@ -9,11 +9,11 @@ class About extends Component {
   }
   render() {
     return (
-      <View style={{flex: 1, backgroundColor: '#212121'}}>
+      <View style={{flex: 1, backgroundColor: 'white'}}>
         <StatusBar backgroundColor="#1976d2" />
         <View
           style={{
-            backgroundColor: '#2196f3',
+            backgroundColor: '#00008B',
             paddingVertical: 15,
             elevation: 3,
             flexDirection: 'row',
@@ -39,8 +39,17 @@ class About extends Component {
             About
           </Text>
         </View>
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <Text style={{color: '#ffffff', padding:10,textAlign:'center'}}>
+        <Image style={{    width: 300,
+    height: 300,
+    borderRadius: 63,
+    borderWidth: 4,
+    borderColor: 'white',
+    marginBottom: 50,
+    alignSelf: 'center',
+    position: 'absolute',
+    marginTop: 90,}} source={require('./ic_tentang.png')} />
+        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', marginTop:140}}>
+          <Text style={{color: '#0e1446', padding:10,textAlign:'center'}}>
             E-Tutor adalah aplikasi pembelajaran bahasa inggris yang akan
             menampilkan materi seputar kaidah dan aturan bahasa Inggris. Dengan
             begitu pengguna bisa mengikuti pembelajaran sesuai melalui materi

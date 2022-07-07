@@ -11,10 +11,10 @@ class Materi extends Component {
     }
     render() {
         return (
-            <View style={{flex:1,backgroundColor:'#212121'}}>
+            <View style={{flex:1,backgroundColor:'white'}}>
                 <StatusBar backgroundColor="#1976d2"/>
                 <View style={{
-                    backgroundColor:'#2196f3',
+                    backgroundColor:'#00008B',
                     paddingVertical:15,
                     elevation:3,
                     flexDirection:'row',
@@ -26,11 +26,11 @@ class Materi extends Component {
                     </TouchableOpacity>
                     <Text
                         style={{color:'#ffffff',textAlign:'center',alignItems:'center',fontWeight:'bold',fontSize:18}}
-                    >Materi</Text>
+                    >Deskripsi</Text>
                 </View>
                 <View style={{justifyContent:'center',alignItems:'center',marginTop:20}}>
-                    <Text style={{color:'#ffff',textAlign:'center',padding:5}}>{this.props.route.params.deskripsi}</Text>
-                    <Text style={{color:'#ffff', marginTop:40}}>{this.props.route.params.contoh}</Text>
+                    <Text style={{color:'#0e1446',textAlign:'center',padding:5}}>{this.props.route.params.deskripsi}</Text>
+                    <Text style={{color:'#0e1446', marginTop:40}}>{this.props.route.params.contoh}</Text>
                 </View>
             </View>
         );

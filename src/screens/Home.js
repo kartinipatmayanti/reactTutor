@@ -101,7 +101,7 @@ class Home extends Component {
             <View style={{flex:1,backgroundColor:'#212121'}}>
                 <StatusBar backgroundColor="#1976d2"/>
                 <View style={{
-                    backgroundColor:'#2196f3',
+                    backgroundColor:'#00008B',
                     paddingVertical:15,
                     elevation:3,
                     flexDirection:'row',
@@ -111,7 +111,7 @@ class Home extends Component {
                     <View style={{flex:1}}>
                     <Text
                         style={{color:'#ffffff',textAlign:'center',alignItems:'center',fontWeight:'bold',fontSize:18}}
-                    >Home
+                    >Materi
                     </Text>
                     </View>
                     <TouchableOpacity onPress={()=> this.props.navigation.navigate('About')}>
@@ -125,9 +125,8 @@ class Home extends Component {
                 />
                 <FlatList
                 data={this.state.data}
-                data1={this.state.dataTampil}
                 renderItem={({item,index})=>(
-                    <TouchableOpacity style={{marginHorizontal:20,marginVertical:10,backgroundColor:'#2196f3',padding:8,borderRadius:5,elevation:3}}
+                    <TouchableOpacity style={{marginHorizontal:20,marginVertical:10,backgroundColor:'#1976d2',padding:8,borderRadius:5,elevation:3}}
                     onPress={() => this.props.navigation.navigate('Materi',{
                         'deskripsi'     : item.dekripsi,
                         'contoh' : item.contoh
